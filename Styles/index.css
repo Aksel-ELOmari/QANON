@@ -1,0 +1,412 @@
+
+html,*
+{
+    margin: 0;
+    padding: 0;
+    transition: .3s;
+    scroll-behavior: smooth;
+}
+/*! --------- Global Classes // Styles--------- */
+:root
+{
+    --Color-Black : #0000;
+    --Color-White:#fff;
+    --Color-Yellow : yellow;
+    --Color-Red : red;
+    --Color-Blue : blue;
+    --Color-Green : green;
+    --Color-Orange : orange;
+    --Color-Orangered :orangered ;
+    --Color-Gold:gold;
+    --Color-Goldenrod:goldenrod;
+    --main-Color:rgb(117, 55, 4); /* the default color of the web */
+    --blur-Px:20px;
+}
+
+/* --------------------  Unic --------------------*/
+a{text-decoration: none;color: var(--Color-White);}
+a:hover{text-decoration: none;color: var(--main-Color);}
+.show{display: block;}
+.hide{display: none;}
+.align-center{text-align: center;}
+.All_vh{min-height:100vh;width: 100%;}
+.Half_vh{min-height:50vh;width: 100%;}
+.countainer{width: 80%;margin: 0 auto;}
+button{cursor: pointer;border: 0;outline: 0;}
+.special{color: var(--main-Color);}
+.text-center{text-align: center;}
+
+.active
+{
+    padding: 12px 20px;
+    background: orangered !important;
+    color: #000 !important;
+    box-shadow: 2px 2px 12px -3px #fff !important;
+    box-shadow: inset 2px 2px 12px  #000 !important;
+    border-radius: 20px !important;
+}
+.btn-x{
+    cursor: pointer;
+    padding: .5rem .6rem;
+    border-radius: 50%;
+    background: #eeeeeea4;
+    color: var(--Color-White);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn-x:hover{color: rgb(255, 210, 8);}
+/* --------------------  Unic --------------------*/
+
+/* --------------------  FLEX BOX --------------------*/
+.flex-column{
+    flex-direction: column;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+.flex-center
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.flex-around
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.flex-between
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.flex-start{
+    display: flex;
+    align-items: flex-start;
+}
+.flex-end{
+    display: flex;
+    align-items: flex-end;
+}
+/* --------------------  FLEX BOX --------------------*/
+
+/* --------------------  GAPS --------------------*/
+.gap-1{display: flex;gap: .1em;}
+.gap-2{display: flex;gap: .2em;}
+.gap-3{display: flex;gap: .3em;}
+.gap-4{display: flex;gap: .4em;}
+.gap-5{display: flex;gap: .5em;}
+.gap-6{display: flex;gap: .6em;}
+.gap-7{display: flex;gap: .7em;}
+.gap-8{display: flex;gap: .8em;}
+.gap-9{display: flex;gap: .9em;}
+.gap-10{display: flex;gap: .10em;}
+/*? margins*/
+.mx-1{margin: .1rem 0;}
+.mx-2{margin: .2rem 0;}
+.mx-3{margin: .3rem 0;}
+.mx-4{margin: .4rem 0;}
+.mx-5{margin: .5rem 0;}
+.mx-6{margin: .6rem 0;}
+.mx-7{margin: .7rem 0;}
+.mx-8{margin: .8rem 0;}
+.mx-9{margin: .9rem 0;}
+.mx-10{margin: .10rem 0;}
+.my-1{margin: .1rem 0;}
+.my-2{margin: .2rem 0;}
+.my-3{margin: .3rem 0;}
+.my-4{margin: .4rem 0;}
+.my-5{margin: .5rem 0;}
+.my-6{margin: .6rem 0;}
+.my-7{margin: .7rem 0;}
+.my-8{margin: .8rem 0;}
+.my-9{margin: .9rem 0;}
+.my-10{margin: .10rem 0;}
+/*? paddings */
+.px-1{margin: .1rem 0;}
+.px-2{margin: .2rem 0;}
+.px-3{margin: .3rem 0;}
+.px-4{margin: .4rem 0;}
+.px-5{margin: .5rem 0;}
+.px-6{margin: .6rem 0;}
+.px-7{margin: .7rem 0;}
+.px-8{margin: .8rem 0;}
+.px-9{margin: .9rem 0;}
+.px-10{margin: .10rem 0;}
+.py-1{margin: .1rem 0;}
+.py-2{margin: .2rem 0;}
+.py-3{margin: .3rem 0;}
+.py-4{margin: .4rem 0;}
+.py-5{margin: .5rem 0;}
+.py-6{margin: .6rem 0;}
+.py-7{margin: .7rem 0;}
+.py-8{margin: .8rem 0;}
+.py-9{margin: .9rem 0;}
+.py-10{margin: .10rem 0;}
+/* --------------------  GAPS --------------------*/
+
+/* --------------------  Buttons --------------------*/
+.btn{
+    padding: 10px 20px;
+    border-radius:8px;
+    border: 0;
+    outline: 0;
+    font-weight: 600;
+    margin: 0 .2rem;
+}
+.btn-radius{
+    padding: 10px 20px;
+    border-radius:20px;
+    border: 0;
+    outline: 0;
+    font-weight: 600;
+    margin: 0 .2rem;
+}
+/* --------------------  Buttons --------------------*/
+/*! --------- End Global Classes // Styles--------- */
+
+body{
+    background: linear-gradient(240deg,rgb(41, 4, 36),rgb(73, 14, 65));
+    font-family:Arial, Helvetica, sans-serif;
+    min-height: 100dvh;
+    min-height: 100vh;
+    width: 100%;
+}
+.headerCover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background:linear-gradient(rgba(5, 5, 5, 0.87),rgba(80, 15, 71, 0.664)),url(../Media/imgs/yonan.jpg);
+    background-size: cover;
+    background-position: center;
+    z-index: -100;
+}
+.nav-bar-1,.col-2{
+    color: var(--Color-White);
+    display: flex;
+    align-items: center;
+    gap: .3rem;
+}
+.nav-bar-1 .col-1{
+    gap: .6rem;
+}
+.nav-Link{
+    color: var(--Color-White);
+    font-weight: bolder;
+    font-style: italic;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+.logo img{
+    height: 50px;
+    width: 50px;
+}
+.logo-name{font-family: sans-serif;color: var(--Color-White);}
+.free-Cons{
+    background: var(--main-Color);
+}
+.Cover img{
+    height: 100vh;
+}
+.Carousel-Lawyers-inner{
+    overflow-x: scroll;
+    translate: 0 10%;
+}
+.Carousel-Lawyers-inner::-webkit-scrollbar{
+    display: none;
+}
+.Lawyer{
+    position: relative;
+    height: 80vh;
+    min-width: 100%;
+    margin: 0 10px;
+}
+.Lawyer::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+.Lawyer .script{
+   padding: .5rem 1rem;
+   font-family: serif;
+   width: 400px;
+}
+.Lawyer .script h3{
+    color: var(--Color-Gold);
+    font-weight: 600;
+ }
+.Lawyer .script h1{
+   color: var( --Color-Goldenrod);
+   font-weight: bolder;
+   font-size: 45px;
+}
+.Lawyer .script p{
+    line-height: 23px;
+    color: var(--Color-White);
+    margin:10px 0;
+}
+.Lawyer .script button{
+    background:rgba(214, 65, 10, 0.781);
+    color: var(--Color-White);
+}
+.Lawyer .script button:hover{
+    background: var(--main-Color);
+    color: var(--Color-White);
+}
+ /* Lawyer Cover */
+.Lawyer .Cover img{
+   max-height: 60vh;
+   min-width: 25vw;
+}
+/* ------------- Carousel buttons -------------- */
+.Carousel-Lawyers-btns{
+    position: absolute;
+    width: 90%;
+    top: 50%;
+    left: 5%;
+    height: max-content;
+}
+.Carousel-Lawyers-btns span{
+    font-weight: bolder;
+}
+
+/* ------------- Carousel buttons -------------- */
+
+ /* the second section of the lawer part */
+.second-section{
+   width: 100%;
+   height: 200px;
+   translate: 0 -50%;
+}
+.second-section .part{
+    height: 100%;
+    flex-grow: 1;
+    padding: 10px;
+    -webkit-backdrop-filter: blur(var(--blur-Px));
+    backdrop-filter: blur(var(--blur-Px));
+    box-shadow: 12px 12px 20px -10px #000;
+    transition: .2s linear;
+    background: rgba(133, 133, 7, 0.205);
+}
+.second-section .part:hover{box-shadow: 12px 12px 20px -0px #000;}
+.second-section .part h4{
+    margin: 20px 0;
+    font-weight: 600;
+    color:rgb(250, 138, 33);
+}
+.second-section .part p{
+   color: #eeeeeecc;
+}
+
+.second-section .part span{
+    height: 50px;
+    width: 100px;
+    background: #000;
+    margin: .7rem;
+}
+
+
+
+
+
+#check:checked body{
+   background: #000;
+}
+
+
+
+
+
+
+
+
+.To-top-btn{
+    background: rgba(255, 255, 0, 0.527);
+    font-weight: bold;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    rotate:-90deg;
+    position: fixed;
+    bottom: .6rem;
+    right: .6rem;
+}
+
+
+.scroll-watcher{
+    height: 6px;
+    width: 100%;
+    background: var(--Color-Orangered);
+    border-radius: 50px;
+    z-index: 1000;
+    animation: scroll-watcher;
+    animation-timeline: scroll();
+    transform-origin: left;
+    position: fixed;
+    top: 0;
+    scale: 0 1;
+}
+@keyframes scroll-watcher{
+   to{scale: 1 1;}
+}
+
+
+
+.nav-ul-x,.navbar{display: none;}
+@media (max-width:768px){
+    .countainer{width: 95%;margin: 0 auto;}
+    .nav-ul{
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: rgba(112, 61, 3, 0.678);
+        flex-direction:column;
+        justify-content: center;
+        -webkit-backdrop-filter: blur(var(--blur-Px));
+        backdrop-filter: blur(var(--blur-Px));
+        display: none;
+        z-index: 2;
+    }
+    .nav-ul a{
+        margin: 10px 0;
+    }
+    .nav-ul-x{
+        position: absolute;
+        top: .8rem;
+        right: .8rem;
+        display: block;
+    }
+    .second-section{
+        flex-direction: column;
+     }
+    .navbar{
+        flex-direction: column;
+        rotate: 90deg;
+        padding: .6rem;
+        border-radius: 5px;
+        display: block;
+    }
+    .Carousel-Lawyers-inner{
+        translate: 0 10%;
+        /* display: none; */
+    }
+}
+@media (max-width:460px){
+    .second-section{
+        translate: 0 0;
+     }
+}
