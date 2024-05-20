@@ -7,11 +7,11 @@ function CarouselEffect(btn){
     if(btn ==rightbtn){
         btn.addEventListener('click',()=>{
             console.log('you clicked the right btn');
-            CarouselLawyers.scrollLeft += '1000';
+            CarouselLawyers.scrollLeft += 1000;
         });
     }else if(btn == leftbtn){
         btn.addEventListener('click',()=>{
-            CarouselLawyers.scrollLeft -= '1000';
+            CarouselLawyers.scrollLeft -= 1000;
         });
     }
 }
